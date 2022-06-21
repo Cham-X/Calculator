@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: open sans-serif;
+  /* background: #333; */
+ 
+ 
+
+}
+.container{
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg) center center/cover;
+}
+.calculator{
+  max-width: 350px;
+  max-height: 550px;
+  background:#ccc;
+  border-radius: 10px;
+  margin:0 auto;
+  top: 20px;
+  position:relative;
+  box-shadow: 10px 10px 10px 2px rgb(88, 85, 78);
+}
+#result{
+  height: 150px;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 1.5rem;
+  background: #fff;
+}
+#input{
+  text-align: right;
+  height: 20px;
+  padding-top: 2rem;
+  padding-right:0.5rem;
+  font-size: 1.5rem;
+}
+#output{
+  text-align: right;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-right:0.5rem;
+}
+#keyboard{
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+}
+.button{
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 50%;
+  font-weight: 50px;
+  font-size: 1.5rem;
+  border: 0;
+  cursor: pointer;
+}
+#number{
+  background-color: #ccc;
+}
+.button:active{
+font-size:1rem ;
+}
+button:nth-child(4){
+font-weight: 70px;
+font-size: 2.5rem;
+background-color: aqua;
+}
+button:nth-child(8){
+font-weight: 70px;
+font-size: 2.5rem;
+background-color: rgb(43, 206, 206);
+}
+button:nth-child(12){
+font-weight: 60px;
+font-size: 2.5rem;
+background-color:orangered;
+}
+button:nth-child(16){
+font-weight: 70px;
+font-size: 2.5rem;
+background-color:orchid;
+}
+button:nth-child(20){
+font-weight: 70px;
+font-size: 2.5rem;
+background-color:lime;
+}
