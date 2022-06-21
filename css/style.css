@@ -13,7 +13,7 @@ body{
 .container{
   min-width: 100vw;
   min-height: 100vh;
-  background: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg) center center/cover;
+background-image: radial-gradient(circle, #ecdbe5, #ddd2dd, #cfc9d3, #c2c0c9, #b6b7be, #acafb5, #a3a7ab, #9b9fa2, #929698, #898e8e, #808585, #787c7b);
   overflow: hidden;
 }
 .calculator{

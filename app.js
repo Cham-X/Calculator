@@ -15,8 +15,8 @@ numbers.forEach((numbers) => {
       displayInput.innerHTML = displayInput.innerText.slice(0, -1); 
       resultOuput.innerHTML = '';
     }  else if ( e.target.innerText === '='){
-      resultOuput.innerHTML = eval(displayInput.innerText);
-      displayInput.innerHTML = eval(displayInput.innerText)    
+      resultOuput.innerHTML = eval((displayInput.innerText).value);
+      displayInput.innerHTML = eval(displayInput.innerText.value)    
     }else{
       displayInput.innerHTML += e.target.innerText;
     }
