@@ -14,6 +14,7 @@ body{
   min-width: 100vw;
   min-height: 100vh;
   background: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg) center center/cover;
+  overflow: hidden;
 }
 .calculator{
   max-width: 350px;
@@ -67,6 +68,7 @@ body{
 }
 .button:active{
 font-size:1rem ;
+border: none;
 }
 button:nth-child(4){
 font-weight: 70px;
