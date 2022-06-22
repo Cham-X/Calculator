@@ -23,7 +23,6 @@ numbers.forEach((numbers) => {
       displayInput.innerHTML += e.target.innerText;
     }
     }catch(e){
-      displayInput.innerHTML =' ERROR';
       resultOuput.innerHTML ='ERROR';
     }
    
