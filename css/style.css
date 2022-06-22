@@ -6,7 +6,7 @@
 body{
   font-family: open sans-serif;
   /* background: #333; */
- 
+  font-family: 'Roboto', sans-serif;
  
 
 }
@@ -19,7 +19,7 @@ background-image: radial-gradient(circle, #ecdbe5, #ddd2dd, #cfc9d3, #c2c0c9, #b
 .calculator{
   max-width: 350px;
   max-height: 550px;
-  background:#ccc;
+  background:#000;
   border-radius: 10px;
   margin:0 auto;
   top: 20px;
@@ -30,8 +30,9 @@ background-image: radial-gradient(circle, #ecdbe5, #ddd2dd, #cfc9d3, #c2c0c9, #b
   height: 150px;
   text-align: right;
   font-size: 40px;
-  border-radius: 1.5rem;
-  background: #fff;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
 }
 #input{
   text-align: right;
@@ -48,23 +49,30 @@ background-image: radial-gradient(circle, #ecdbe5, #ddd2dd, #cfc9d3, #c2c0c9, #b
 }
 #keyboard{
   height: 400px;
+  margin-left: 5px;
   align-items: center;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4 , 1fr);
 }
 .button{
-  width: 50px;
-  height: 50px;
-  margin: 15px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
   border-radius: 50%;
   font-weight: 50px;
   font-size: 1.5rem;
-  border: 0;
+  border: none;
   cursor: pointer;
 }
+.button0{
+  grid-column: 1/3;
+  width: 150px;
+  border-radius: 80px;
+}
 #number{
-  background-color: #ccc;
+  background-color: #333;
+  color: #fff;
 }
 .button:active{
 font-size:1rem ;
@@ -73,25 +81,43 @@ border: none;
 button:nth-child(4){
 font-weight: 70px;
 font-size: 2.5rem;
-background-color: aqua;
+background-color: orange;
+color: #fff;
 }
 button:nth-child(8){
 font-weight: 70px;
 font-size: 2.5rem;
-background-color: rgb(43, 206, 206);
+background-color: orange;
+color: #fff;
 }
 button:nth-child(12){
 font-weight: 60px;
 font-size: 2.5rem;
-background-color:orangered;
+background-color:orange;
+color: #fff;
 }
 button:nth-child(16){
 font-weight: 70px;
 font-size: 2.5rem;
-background-color:orchid;
+background-color:orange;
+color: #fff;
 }
-button:nth-child(20){
+button:nth-child(19){
 font-weight: 70px;
 font-size: 2.5rem;
-background-color:lime;
+background-color:orange; 
+color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .container{
+    background-color: #000;
+    background-image: none;
+
+  }
+  .calculator{
+    max-width: 100%;
+    height: 100vh;
+    box-shadow: none;
+  }
 }
